@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<div id="content_bogy">
+
+    <!--[if lte IE 9]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+            href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+        以获得更好的体验！</p>
+    <![endif]-->
+    <header style="background-color: #0a628f;height: 5rem">
+        <p class="am-text-right" style="margin-right: 2rem;color: rgba(67, 195, 255, 0.67)">
+            <small v-text="team"></small>
+        </p>
+    </header>
+    <div style="background-color: #0a628f" class="am-center">
+        <ul class="am-g am-g-fixed am-nav am-nav-pills " >
+            <template v-for="(nav,key,index) in navs">
+                <li v-if="key==1" class="am-active">
+                    <a href="#" >{{nav.name}}</a>
+                </li>
+                <li v-else-if="key==0">
+                    <a v-bind:href="nav.href" >{{nav.name}}</a>
+                </li>
+                <li v-else>
+                    <a v-bind:href="nav.href" target="_blank">{{nav.name}}</a>
+                </li>
+            </template>
+        </ul>
+    </div>
+    <!-- 页面内容 开发时删除 -->
+    <div class="am-g am-g-fixed am-margin-top">
+        <!--<div class="am-u-sm-12">-->
+        <!--<h1>移动端API接口</h1>-->
+        <!--<p><a target="_blank" href="http://192.168.0.239:18080">http://192.168.0.251:8080</a></p>-->
+        <!--</div>-->
+        <div class="am-u-sm-12" v-for="item in items">
+            <h1 v-text="item.title"></h1>
+            <p><a target="_blank" v-bind:href="item.url" v-text="item.des"></a>
+            </p>
+        </div>
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>注塑宝在线文档</h1>-->
+            <!--<p><a target="_blank" href="http://192.168.0.247:8888/mobile-apidoc-test/index.html">http://192.168.0.247:8888/mobile-apidoc-test/index.html/</a>-->
+            <!--</p>-->
+        <!--</div>-->
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>APP更新服务</h1>-->
+            <!--<p><a target="_blank" href="http://192.168.0.251:8899/">http://192.168.0.251:8899/</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>代码审核</h1>-->
+            <!--<p><a target="_blank" href="http://192.168.0.251:8060/">http://192.168.0.251:8060/</a></p>-->
+        <!--</div>-->
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>Git服务</h1>-->
+            <!--<p><a target="_blank" href="http://120.132.50.223:9000/">http://120.132.50.223:9000/</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>在线文件(ownCloud)</h1>-->
+            <!--<p><a target="_blank" href="http://192.168.0.251:8085/">http://192.168.0.251:8085/</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>Mac mini Jenkins</h1>-->
+            <!--<p><a target="_blank" href="http://192.168.2.191:8080/">http://192.168.2.191:8080/</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="am-u-sm-12">-->
+            <!--<h1>Mac mini Xcode Server</h1>-->
+            <!--<p><a target="_blank"-->
+                  <!--href="https://192.168.2.191/xcode/bots/latest">https://192.168.2.191/xcode/bots/latest</a></p>-->
+        <!--</div>-->
+
+    </div>
+
+    <footer class="am-margin-top">
+        <hr/>
+        <p class="am-text-center">
+            <small v-html="copyright"><span >by The Ouyi Mobile Team.</span></small>
+        </p>
+    </footer>
+</div>
+<!-- 以上页面内容 开发时删除 -->
+
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/vue.js"></script>
+<script src="js/vue-resource.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: "#content_bogy",
+        data: {
+            "navs": [],
+            "team": '',
+            "copyright": "",
+            "items":[]
+        }
+    });
+    //加载成功执行方法
+    window.onload = function () {
+        $.get("./json/nav.json", function (data, textStatus, dataType) {
+            console.log("data=", data, "textStatus", textStatus, "dataType", dataType);
+            document.title = data.title;
+            app.$data.navs = data.navs;
+            app.$data.team = data.team;
+            app.$data.copyright = data.copyright;
+        });
+        $.get("./json/dev.json", function (data, textStatus, dataType) {
+                console.log("data=", data, "textStatus", textStatus, "dataType", dataType);
+                app.$data.items=data;
+            }
+        );
+    }
+</script>
+</body>
+</html>

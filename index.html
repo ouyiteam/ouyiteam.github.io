@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<div id="content_bogy">
+    <!--[if lte IE 9]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+            href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+        以获得更好的体验！</p>
+    <![endif]-->
+    <header style="background-color: #0a628f;height: 5rem">
+        <p class="am-text-right" style="margin-right: 2rem;color: rgba(67, 195, 255, 0.67)">
+            <small>{{team}}</small>
+        </p>
+    </header>
+    <div style="background-color: #0a628f" class="am-center">
+        <ul class="am-g am-g-fixed am-nav am-nav-pills">
+            <li class="am-active"><a href="#">{{navs[0].name}}</a></li>
+            <li><a v-bind:href="navs[1].href">{{navs[1].name}}</a></li>
+            <li><a v-bind:href="navs[2].href" target="_blank">{{navs[2].name}}</a></li>
+            <li><a v-bind:href="navs[3].href" target="_blank">{{navs[3].name}}</a></li>
+            <li><a v-bind:href="navs[4].href" target="_blank">{{navs[4].name}}</a></li>
+            <!--<li><a href="http://oue-4009696109.f3322.net:4812/secure/Dashboard.jspa" target="_blank">JIRA Bug跟踪</a></li>-->
+            <!--<li><a href="hosts.html">局域网配置</a></li>-->
+        </ul>
+    </div>
+    <!-- 页面内容 开发时删除 -->
+    <div class="am-g am-g-fixed am-margin-top">
+        <div class="am-u-sm-12">
+            <h1>移动组资源查询</h1>
+
+            <p>移动开发中资源和使用说明</p>
+        </div>
+    </div>
+    <div class="am-g am-g-fixed am-margin-top">
+        <p class="am-u-sm-12">常用服务列举</p>
+
+        <div class="am-u-sm-12">
+            <div class="am-g">
+                <div class="am-u-sm-12 am-u-md-3">
+                    <img class="am-img-thumbnail"
+                         src="assets/i/examples/landingPage.png"
+                            alt="API在线管理"/>
+                </div>
+                <div class="am-u-sm-12 am-u-md-9">
+                    <h3>API在线管理</h3>
+
+                    <p>
+                        项目部分：
+                        <a class="am-badge am-badge-success" v-bind:href="apidatas[0].apiUrl" target="_blank" v-text="apidatas[0].apiName"></a>
+                        <a class="am-badge am-badge-success" v-bind:href="apidatas[1].apiUrl" target="_blank" v-text="apidatas[1].apiName"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="am-g am-margin-top">
+                <div class="am-u-sm-12 am-u-md-3">
+                    <a v-bind:href="content.codeReviewUrl" target="_blank"><img class="am-img-thumbnail"
+                                                                              src="assets/i/examples/loginPage.png"
+                                                                              alt="代码审核"/></a>
+                </div>
+                <!--<div class="am-u-sm-12 am-u-md-9">-->
+                <!--<h3>代码审核(Codebrag)</h3>-->
+
+                <!--<p>-->
+                <!--项目部分：<a class="am-badge am-badge-success" href="http://192.168.0.251:8080/" target="_blank">工厂直聘Android</a> <a-->
+                <!--class="am-badge am-badge-success" href="http://192.168.0.251:8080/" target="_blank">工厂直聘IOS</a> <a-->
+                <!--class="am-badge am-badge-success" href="http://192.168.0.251:8080/" target="_blank">企迅通扫码终端V2.0</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <div class="am-u-sm-12 am-u-md-9">
+                    <h3>{{content.codeReviewName}}</h3>
+
+                    <p>
+                        项目部分：<a class="am-badge am-badge-success" v-bind:href="content.codeReviewUrl" target="_blank">易塑宝Android</a>
+                        <a
+                                class="am-badge am-badge-success" v-bind:href="content.codeReviewUrl" target="_blank">易塑宝IOS</a>
+                        <a
+                                class="am-badge am-badge-success" v-bind:href="content.codeReviewUrl" target="_blank">注塑宝Android</a>
+                    </p>
+                </div>
+            </div>
+            <div class="am-g am-margin-top">
+                <div class="am-u-sm-12 am-u-md-3">
+                    <a v-bind:href="content.gitRepoUrl" target="_blank"><img class="am-img-thumbnail"
+                                                                              src="assets/i/examples/blogPage.png"
+                                                                              alt="Git仓库"/></a>
+                </div>
+                <div class="am-u-sm-12 am-u-md-9">
+                    <h3>{{content.gitRepoName}}</h3>
+
+                    <p>
+                        仓库部分：<a class="am-badge am-badge-success" v-bind:href="content.gitRepoUrl" target="_blank">Git
+                        Repo</a>
+                    </p>
+                </div>
+            </div>
+            <hr/>
+            <h2>其他问题及反馈</h2>
+            <ul>
+                <li>有问题,想法及建议请反馈 <a href="mailto:zhangdl@cn-talent.net">Email:zhangdl@cn-talent.net</a></li>
+                <li>更多信息请移步:<a v-bind:href="company[0].website" target="_blank">{{company[0].name}}</a>,
+                    <a v-bind:href="company[1].website" target="_blank">{{company[1].name}}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="am-margin-top">
+        <hr/>
+        <p class="am-text-center">
+            <small>{{copyright}}</small>
+        </p>
+    </footer>
+    <!-- 以上页面内容 开发时删除 -->
+
+</div>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/vue.js"></script>
+<script src="js/vue-resource.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+    var app=new Vue({
+        el:"#content_bogy",
+        data:{
+            "navs":[],
+            "company":[],
+            "team":'',
+            "copyright":"",
+            "content":{},
+            "apidatas":[]
+        }
+    });
+    //加载成功执行方法
+    window.onload=function () {
+        $.get("./json/nav.json",function (data, textStatus, dataType) {
+            console.log("data=", data, "textStatus", textStatus, "dataType", dataType);
+            document.title = data.title;
+            app.$data.navs=data.navs;
+            app.$data.team=data.team;
+            app.$data.copyright=data.copyright;
+            app.$data.company=data.company;
+        });
+        $.get("./json/index.json",function (data,textStatus,dataType) {
+                console.log("data=", data, "textStatus", textStatus, "dataType", dataType);
+                app.$data.content=data;
+                app.$data.apidatas=data.apis;
+            }
+        );
+    }
+</script>
+</body>
+</html>

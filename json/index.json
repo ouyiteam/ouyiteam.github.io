@@ -1,0 +1,17 @@
+{
+  "codeReviewUrl":"http://192.168.0.251:8060/",
+  "codeReviewName":"代码审核(Crucible)",
+  "gitRepoUrl":"http://120.132.50.223:9000",
+  "gitRepoName":"Git Repo",
+  "apis":[
+    {
+      "apiUrl":"http://192.168.0.247:8888/mobile-apidoc-test/",
+      "apiName":"注塑宝在线文档"
+    },
+    {
+      "apiUrl":"http://192.168.0.247:8888/appsimple-apidoc/",
+      "apiName":"易塑宝在线文档"
+    }
+  ]
+
+}

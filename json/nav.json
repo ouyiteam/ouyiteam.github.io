@@ -1,0 +1,38 @@
+{
+  "title": "欧一移动组",
+  "team": "欧一移动开发",
+  "copyright":"by The Ouyi Mobile Team @copyright App Team.",
+  "email":"zhangdl@cn-talent.net",
+  "company":[
+    {
+      "website":"http://www.cn-talent.net",
+      "name":"《山东天利和软件股份有限公司》"
+    },
+    {
+      "website":"http://www.mdqxt.cn",
+      "name":"《企迅通官网》"
+    }
+  ],
+  "navs": [
+    {
+      "name": "首页",
+      "href":"index.html"
+    },
+    {
+      "name":"服务说明",
+      "href":"dev.html"
+    },
+    {
+      "name":"分享逍客",
+      "href":"https://www.fxiaoke.com/"
+    },
+    {
+      "name":"团队博客",
+      "href":"https://ouyiteam.github.io/tech/"
+    },
+    {
+      "name":"JIRA Bug跟踪",
+      "href":"http://192.168.0.99:8081/secure/Dashboard.jspa"
+    }
+  ]
+}

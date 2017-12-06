@@ -1,0 +1,52 @@
+[
+  {
+    "title":"注塑宝在线文档",
+    "url":"http://192.168.0.247:8888/mobile-apidoc-test/",
+    "des":"http://192.168.0.247:8888/mobile-apidoc-test/"
+  },
+  {
+    "title":"易塑宝在线文档",
+    "url":"http://192.168.0.247:8888/appsimple-apidoc/",
+    "des":"http://192.168.0.247:8888/appsimple-apidoc/"
+  },
+  {
+    "title":"APP更新服务",
+    "url":"http://192.168.0.251:8899/update/manager/login",
+    "des":"http://192.168.0.251:8899/update/manager/login"
+  },
+  {
+    "title":"APP更新服务(53)",
+    "url":"http://118.190.101.53:8899/update/manager/login",
+    "des":"http://118.190.101.53:8899/update/manager/login"
+  },
+  {
+    "title":"APP更新服务(正式服)",
+    "url":"http://app.update.mdqxt.cn/update/manager/login",
+    "des":"http://app.update.mdqxt.cn/update/manager/login"
+  },
+  {
+    "title":"代码审核",
+    "url":"http://192.168.0.251:8060/",
+    "des":"http://192.168.0.251:8060/"
+  },
+  {
+    "title":"Git服务",
+    "url":"http://120.132.50.223:9000/",
+    "des":"http://120.132.50.223:9000/"
+  },
+  {
+    "title":"在线文件(ownCloud)",
+    "url":"http://192.168.0.251:8085/",
+    "des":"http://192.168.0.251:8085/"
+  },
+  {
+    "title":"Mac mini Jenkins",
+    "url":"http://192.168.2.191:8080/",
+    "des":"http://192.168.2.191:8080/"
+  },
+  {
+    "title":"Mac mini Xcode Server",
+    "url":"https://192.168.2.191/xcode/bots/latest",
+    "des":"https://192.168.2.191/xcode/bots/latest"
+  }
+]
