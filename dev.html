@@ -56,13 +56,13 @@
         <ul class="am-g am-g-fixed am-nav am-nav-pills " >
             <template v-for="(nav,key,index) in navs">
                 <li v-if="key==1" class="am-active">
-                    <a href="#" >{{nav.name}}</a>
+                    <a href="#" v-text="nav.name"></a>
                 </li>
                 <li v-else-if="key==0">
-                    <a v-bind:href="nav.href" >{{nav.name}}</a>
+                    <a v-bind:href="nav.href" v-text="nav.name"></a>
                 </li>
                 <li v-else>
-                    <a v-bind:href="nav.href" target="_blank">{{nav.name}}</a>
+                    <a v-bind:href="nav.href" target="_blank" v-text="nav.name"></a>
                 </li>
             </template>
         </ul>

@@ -48,16 +48,16 @@
     <![endif]-->
     <header style="background-color: #0a628f;height: 5rem">
         <p class="am-text-right" style="margin-right: 2rem;color: rgba(67, 195, 255, 0.67)">
-            <small>{{team}}</small>
+            <small v-text="team"></small>
         </p>
     </header>
     <div style="background-color: #0a628f" class="am-center">
         <ul class="am-g am-g-fixed am-nav am-nav-pills">
-            <li class="am-active"><a href="#">{{navs[0].name}}</a></li>
-            <li><a v-bind:href="navs[1].href">{{navs[1].name}}</a></li>
-            <li><a v-bind:href="navs[2].href" target="_blank">{{navs[2].name}}</a></li>
-            <li><a v-bind:href="navs[3].href" target="_blank">{{navs[3].name}}</a></li>
-            <li><a v-bind:href="navs[4].href" target="_blank">{{navs[4].name}}</a></li>
+            <li class="am-active"><a href="#" v-text="navs[0].name"></a></li>
+            <li><a v-bind:href="navs[1].href" v-text="navs[1].name"></a></li>
+            <li><a v-bind:href="navs[2].href" target="_blank" v-text="navs[2].name"></a></li>
+            <li><a v-bind:href="navs[3].href" target="_blank" v-text="navs[3].name"></a></li>
+            <li><a v-bind:href="navs[4].href" target="_blank" v-text="navs[4].name"></a></li>
             <!--<li><a href="http://oue-4009696109.f3322.net:4812/secure/Dashboard.jspa" target="_blank">JIRA Bug跟踪</a></li>-->
             <!--<li><a href="hosts.html">局域网配置</a></li>-->
         </ul>
@@ -106,7 +106,7 @@
                 <!--</p>-->
                 <!--</div>-->
                 <div class="am-u-sm-12 am-u-md-9">
-                    <h3>{{content.codeReviewName}}</h3>
+                    <h3 v-text="content.codeReviewName"></h3>
 
                     <p>
                         项目部分：<a class="am-badge am-badge-success" v-bind:href="content.codeReviewUrl" target="_blank">易塑宝Android</a>
@@ -124,7 +124,7 @@
                                                                               alt="Git仓库"/></a>
                 </div>
                 <div class="am-u-sm-12 am-u-md-9">
-                    <h3>{{content.gitRepoName}}</h3>
+                    <h3 v-text="content.gitRepoName"></h3>
 
                     <p>
                         仓库部分：<a class="am-badge am-badge-success" v-bind:href="content.gitRepoUrl" target="_blank">Git
@@ -136,8 +136,8 @@
             <h2>其他问题及反馈</h2>
             <ul>
                 <li>有问题,想法及建议请反馈 <a href="mailto:zhangdl@cn-talent.net">Email:zhangdl@cn-talent.net</a></li>
-                <li>更多信息请移步:<a v-bind:href="company[0].website" target="_blank">{{company[0].name}}</a>,
-                    <a v-bind:href="company[1].website" target="_blank">{{company[1].name}}</a></li>
+                <li>更多信息请移步:<a v-bind:href="company[0].website" target="_blank" v-text="company[0].name"></a>,
+                    <a v-bind:href="company[1].website" target="_blank" v-text="company[1].name"></a></li>
             </ul>
         </div>
     </div>
@@ -145,7 +145,7 @@
     <footer class="am-margin-top">
         <hr/>
         <p class="am-text-center">
-            <small>{{copyright}}</small>
+            <small v-text="copyright"></small>
         </p>
     </footer>
     <!-- 以上页面内容 开发时删除 -->
