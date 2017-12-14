@@ -41,12 +41,12 @@
   },
   {
     "title":"Mac mini Jenkins",
-    "url":"http://192.168.0.191:8080/",
-    "des":"http://192.168.0.191:8080/"
+    "url":"http://192.168.2.191:8080/",
+    "des":"http://192.168.2.191:8080/"
   },
   {
     "title":"Mac mini Xcode Server",
-    "url":"https://192.168.0.191/xcode/bots/latest",
-    "des":"https://192.168.0.191/xcode/bots/latest"
+    "url":"https://192.168.2.191/xcode/bots/latest",
+    "des":"https://192.168.2.191/xcode/bots/latest"
   }
 ]
