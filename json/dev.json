@@ -48,5 +48,10 @@
     "title":"Mac mini Xcode Server",
     "url":"https://192.168.2.191/xcode/bots/latest",
     "des":"https://192.168.2.191/xcode/bots/latest"
+  },
+  {
+    "title":"Trello平台",
+    "url":"https://trello.com",
+    "des":"移动组任务研发管理平台"
   }
 ]
