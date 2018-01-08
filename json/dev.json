@@ -53,5 +53,10 @@
     "title":"Trello平台",
     "url":"https://trello.com",
     "des":"移动组任务研发管理平台"
+  },
+  {
+    "title":"UEditor",
+    "url":"https://ouyiteam.github.io/ueditor.html",
+    "des":"简单的富文本编辑器（附件、图片不支持）"
   }
 ]
