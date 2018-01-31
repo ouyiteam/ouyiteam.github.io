@@ -10,6 +10,11 @@
     "des":"http://192.168.0.247:8888/appsimple-apidoc/"
   },
   {
+    "title":"注塑宝HD在线文档",
+    "url":"http://192.168.0.247:8888/touchpanel-apidoc-test/",
+    "des":"http://192.168.0.247:8888/touchpanel-apidoc-test/"
+  },
+  {
     "title":"APP更新服务",
     "url":"http://192.168.0.251:8899/update/manager/login",
     "des":"http://192.168.0.251:8899/update/manager/login"
