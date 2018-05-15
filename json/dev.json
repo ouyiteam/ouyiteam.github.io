@@ -68,5 +68,10 @@
     "title":"UEditor",
     "url":"http://192.168.0.251/ueditor.html",
     "des":"简单的富文本编辑器（附件、图片不支持）"
+  },
+  {
+    "title":"Maven仓库",
+    "url":"http://120.132.50.223:9000/open/mvn_depository/raw/master/repo/",
+    "des":"小组Maven仓库"
   }
 ]
