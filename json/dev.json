@@ -40,11 +40,6 @@
     "des":"http://192.168.0.251:8899/update/manager/login"
   },
   {
-    "title":"APP更新服务(53)",
-    "url":"http://118.190.101.53:8899/update/manager/login",
-    "des":"http://118.190.101.53:8899/update/manager/login"
-  },
-  {
     "title":"APP更新服务(正式服)",
     "url":"http://app.update.mdqxt.cn/update/manager/login",
     "des":"http://app.update.mdqxt.cn/update/manager/login"
@@ -66,13 +61,13 @@
   },
   {
     "title":"Mac mini Jenkins",
-    "url":"http://192.168.2.191:8080/",
-    "des":"http://192.168.2.191:8080/"
+    "url":"http://192.168.0.102:8080/",
+    "des":"http://192.168.0.102:8080/"
   },
   {
     "title":"Mac mini Xcode Server",
-    "url":"https://192.168.2.191/xcode/bots/latest",
-    "des":"https://192.168.2.191/xcode/bots/latest"
+    "url":"https://192.168.0.102/xcode/bots/latest",
+    "des":"https://192.168.0.102/xcode/bots/latest"
   },
   {
     "title":"Trello平台",
