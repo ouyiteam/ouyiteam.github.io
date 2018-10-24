@@ -15,6 +15,11 @@
     "des":"http://192.168.0.114:8081/swagger-ui.html"
   },
   {
+    "title":"注塑宝在线文档PDA接口文档-qxt2all",
+    "url":"http://192.168.0.118:8888/qxt2all-apidoc-test/",
+    "des":"http://192.168.0.118:8888/qxt2all-apidoc-test/"
+  },
+  {
     "title":"注塑宝PDA在线文档",
     "url":"http://192.168.0.118:8888/qxt2pda-apidoc-test/",
     "des":"http://192.168.0.118:8888/qxt2pda-apidoc-test/"
